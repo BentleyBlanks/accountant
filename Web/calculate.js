@@ -77,11 +77,11 @@ function display() {
 	var money = calcaulateInverse(document.getElementById("实发").value);
 
 	//alert(money);
-	document.getElementById("应发").value = money[0].toFixed(2);;
-	document.getElementById("个税").value = money[1].toFixed(2);;
-	document.getElementById("增值税").value = money[2].toFixed(2);;
-	document.getElementById("城建税").value = money[3].toFixed(2);;
-	document.getElementById("税金额总计").value = money[4].toFixed(2);;
+	document.getElementById("应发").value = parseFloat(money[0]).toFixed(2);
+	document.getElementById("个税").value = parseFloat(money[1]).toFixed(2);
+	document.getElementById("增值税").value = parseFloat(money[2]).toFixed(2);
+	document.getElementById("城建税").value = parseFloat(money[3]).toFixed(2);
+	document.getElementById("税金额总计").value = parseFloat(money[4]).toFixed(2);
 }
 
 function author() {
